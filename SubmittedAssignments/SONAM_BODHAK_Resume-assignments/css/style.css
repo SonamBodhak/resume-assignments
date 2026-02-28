@@ -1,0 +1,146 @@
+body{
+    background-color: rgb(11, 204, 37);
+    padding:none;
+    margin:none;
+}
+:host {
+    display: block;
+}
+
+/* Main Resume Container */
+.resume-container {
+    width: 210mm;
+    height: 297mm;
+    padding: 15mm;
+    background: #f4f7fb;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 15pt;
+    color: #052546;
+}
+
+/* Header Section */
+.resume-header {
+    display: flex;
+    align-items: center;
+    height: 40mm;
+    margin-bottom: 10mm;
+    padding-bottom: 5mm;
+    border-bottom: 2pt solid #301bee;
+    background-color: blue;
+}
+
+.profile-img {
+    width: 35mm;
+    height: 35mm;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 8mm;
+    border: 2pt solid #1f4e79;
+}
+
+/* Name Styling */
+.name {
+    font-size: 20pt;
+    font-weight: bold;
+    margin: 0;
+    color: #1f4e79;
+    letter-spacing: 1pt;
+}
+
+.profile-line {
+    font-size: 13pt;
+    margin: 2mm 0;
+    color: #34495e;
+}
+
+.contact-info {
+    font-size: 10pt;
+    color: #555;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-top: 8mm;
+    margin-bottom: 4mm;
+    padding-bottom: 2mm;
+    color: #1f4e79;
+    border-bottom: 1.5pt solid #1f4e79;
+}
+
+/* Description */
+.description {
+    font-size: 11pt;
+    margin-bottom: 6mm;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3mm;
+}
+
+.skill-badge {
+    padding: 2mm 5mm;
+    background: #1f4e79;
+    color: white;
+    font-size: 10pt;
+    border-radius: 4mm;
+}
+
+/* Education */
+.education-item {
+    margin-bottom: 5mm;
+    padding: 3mm;
+    background: white;
+    border-left: 4mm solid #1f4e79;
+}
+
+/* Projects */
+.project-item {
+    margin-bottom: 6mm;
+    padding: 3mm;
+    background: white;
+    border-left: 4mm solid #3498db;
+}
+
+.project-title {
+    font-size: 12pt;
+    font-weight: bold;
+    color: #1f4e79;
+}
+
+.project-description {
+    font-size: 11pt;
+    margin-top: 2mm;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 6mm;
+    margin-top: 3mm;
+}
+
+.social-links a {
+    font-size: 11pt;
+    text-decoration: none;
+    color: #1f4e79;
+    font-weight: bold;
+    border-bottom: 1pt solid #1f4e79;
+}
+
+/* Print Optimization */
+@media print {
+    body {
+        margin: 0;
+    }
+
+    .resume-container {
+        background: rgba(255, 255, 255, 0.856);
+    }
+}
